@@ -17,3 +17,7 @@ from https://docs.docker.com/engine/userguide/dockervolumes/
 
 # env.user
 This file contains the tokens needed to connect to todoist and habitica
+
+# sync-habit.bat
+A script to run the container on Windows where the task history is located in your ```OneDrive/Documents/task_history/``` folder.
+The path to the OneDrive is the default one.
