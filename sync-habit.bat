@@ -1,0 +1,1 @@
+docker run --rm -it -v /c/Users/$USER/OneDrive/Documents/task_history:/app/data --env-file user.env trotro/todoist-habitica

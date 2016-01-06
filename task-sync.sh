@@ -1,0 +1,8 @@
+#!/bin/sh
+# launch the sync
+# TODO : get ID by ENV variables
+habit_UID=$HABIT_UID
+habit_token=$HABIT_TOKEN
+todoist_token=$TODOIST_TOKEN
+/usr/bin/todoist-habitrpg -u $habit_UID -t $habit_token -a $todoist_token -f /app/data
+#EOF
