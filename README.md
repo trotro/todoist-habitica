@@ -1,3 +1,5 @@
+[![](https://badge.imagelayers.io/trotro/todoist-habitica:latest.svg)](https://imagelayers.io/?images=trotro/todoist-habitica:latest 'Get your own badge on imagelayers.io')
+
 Dockerfile and scripts to run [todoist-habitrpg nodeJS script](https://github.com/kusold/todoist-habitrpg) inside a docker container.
 
 # RUN
