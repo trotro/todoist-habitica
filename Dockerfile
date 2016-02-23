@@ -1,9 +1,9 @@
 FROM alpine:latest
-MAINTAINER trotro
-RUN apk --update add nodejs
-RUN npm install -g todoist-habitrpg
-RUN mkdir -p /app
-RUN mkdir -p /app/data
+RUN apk --update add nodejs \
+	&& npm install -g todoist-habitrpg \
+	&& rm -rf /var/cache/apk/* \
+	&& mkdir -p /app \
+	&& mkdir -p /app/data
 COPY task-sync.sh /app/
 WORKDIR /app
 ENTRYPOINT ["/app/task-sync.sh"]
