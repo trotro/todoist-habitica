@@ -5,5 +5,6 @@ RUN apk --update add nodejs \
 	&& mkdir -p /app \
 	&& mkdir -p /app/data
 COPY task-sync.sh /app/
+RUN chmod +x /app/task-sync.sh
 WORKDIR /app
-ENTRYPOINT ["/bin/sh /app/task-sync.sh"]
+ENTRYPOINT ["/app/task-sync.sh"]
